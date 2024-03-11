@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+body {
+  background: #6868ac;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 640px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 24px;
+  padding: 0 24px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-weight: 700;
+  font-size: 8rem;
+  text-shadow: -15px 5px 20px #ced0d3;
+  letter-spacing: 0.02em;
+  color: #f9f1cc;
+  text-shadow: 3px 3px 0px #ffb650, 6px 6px 0px #ffd662, 9px 9px 0px #ff80bf,
+    12px 12px 0px #ef5097, 15px 15px 0px #6868ac, 17px 17px 0px #90b1e0;
+  font-family: 'Calligraffitti';
+  margin-left: -1.5rem;
+  padding-top: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.task-form input {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.task-form button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  background: #f9f1cc;
+  color: #6868ac;
+  cursor: pointer;
+  font-weight: bold;
+}
+hr {
+  width: 100%;
+  border: solid white 1px;
+  box-shadow: none;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+.task button {
+  padding: 8px 12px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: white;
+  display: inline-block;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+.task button:hover {
+  background-color: #f9f1cc;
 }
